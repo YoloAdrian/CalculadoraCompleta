@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div>
+            <h1>Calculadora</h1>
+            <input type="text" name="display" id="display" value="" placeholder="0" readonly>
+            <div>
+                <button class="op" onclick="">%</button>
+                <button class="op" onclick="limpiar()">CE</button>
+                <button class="op" onclick="eli()">C</button>
+                <button class="op" onclick="operaciones('X')">X</button>
+            </div>
+            <div>
+                <button class="num" onclick="digitos(7)">7</button>
+                <button class="num" onclick="digitos(8)">8</button>
+                <button class="num" onclick="digitos(9)">9</button>
+                <button class="op" onclick="operaciones('/')">/</button>
+            </div>
+            <div>
+                <button class="num" onclick="digitos(4)">4</button>
+                <button class="num" onclick="digitos(5)">5</button>
+                <button class="num" onclick="digitos(6)">6</button>
+                <button class="op" onclick="operaciones('-')">-</button>
+            </div>
+            <div>
+                <button class="num" onclick="digitos(1)">1</button>
+                <button class="num" onclick="digitos(2)">2</button>
+                <button class="num" onclick="digitos(3)">3</button>
+                <button class="op" onclick="operaciones('*')">*</button>
+            </div>
+            <div>
+                <button class="op" onclick="operaciones('.')">.</button>
+                <button class="num" onclick="digitos(0)">0</button>
+                <button class="op" onclick="operaciones('+')">+</button>
+                <button class="op" onclick="calcular()">=</button>
+            </div>
+            <h2 id="rtd">El resultado es:</h2>
+            <div id="historial"></div>
+        </div>
+    <script src="./Calculadora.js"></script>
+</body>
+</html>
